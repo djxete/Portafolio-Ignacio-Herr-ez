@@ -5,8 +5,8 @@
   --fondo: #ffffff;
   --titulos: 40px;
   --margenes: 60px;
-  --: 10px;
-  ---contenido:45px;
+  --espacios: 10px;
+  --espacios-contenido:45px;
 }
 
 * {
@@ -122,11 +122,11 @@ header .textos-header{
 .contenedor h3{
   font-size: var(--titulos);
   color: var(--color1);
-  margin-bottom: var(--);
+  margin-bottom: var(--espacios);
 }
 
-.contenedor p{
-  font-size: var(--subtitulos);
+.contenedor__p{
+  font-size: 18px;
   font-weight: 300;
   color: var(--color1);
 }
@@ -135,26 +135,14 @@ header .textos-header{
   content:'';
   display: block;
   margin: auto;
-  margin-top: var(--);
+  margin-top: var(--espacios);
   width: 100px;
   height: 2px;
   background: var(--color1);
-  margin-bottom: var(---contenido);
+  margin-bottom: var(--espacios-contenido);
 }
 
 
-.card{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.content-card{
-  width: 31%;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
-  overflow: hidden;
-  height:400px;
-}
 
 .people{
   height: 80%;
@@ -169,7 +157,7 @@ header .textos-header{
 .texto-team{
   height: 20%;
   width: 100%;
-  padding: var(--) 0;
+  padding: var(--espacios) 0;
 }
 
 
@@ -180,10 +168,9 @@ header .textos-header{
 .botones-work li{
   display: inline-block;
   text-align: center;
-  border-radius: 5%;
-  margin-left: var(--);
-  margin-bottom: var(---contenido);
-  padding: 12px 24px;
+  margin-left: var(--espacios);
+  margin-bottom: var(--espacios-contenido);
+  padding: 6px 12px;
   border: 1px solid var(--color1);
   list-style: none;
   color: var(--color1);
@@ -212,7 +199,7 @@ header .textos-header{
   border:  1px solid var(--color1);
   height:300px;
   overflow: hidden;
-  margin-bottom: var(---contenido);
+  margin-bottom: var(--margenes);
   
 }
 
@@ -263,7 +250,7 @@ header .textos-header{
 .slider h3{
   font-size: var(--titulos);
   color: var(--color1);
-  margin-bottom: var(--);
+  margin-bottom: var(--espacios);
   text-align: center;
 }
 
@@ -272,7 +259,7 @@ header .textos-header{
   margin: auto;
   perspective: 800px;
   position: relative;
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 60px;
 }
 
@@ -296,7 +283,7 @@ header .textos-header{
   position: absolute;
   box-shadow: 0px 0px 20px 0px black;
   transition: all 300ms;
-  background-color: var(--color1);
+  
   
 }
 
@@ -320,7 +307,7 @@ header .textos-header{
   display: block;
   margin: 0 auto;
   transition: all 300ms;
-  height: 100%;
+  min-height: 100%;
   width: 50%;
 }
 
@@ -338,10 +325,68 @@ header .textos-header{
   }
 }
 
+/*-------------------------------------------------------------------*/
 
+/* Quien soy */
+
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+
+.content-card{
+  width: 31%;
+  box-shadow: 0 0 6px 0 rga(0,0,0,.5);
+  overflow: hidden;
+  height:400px;
+}
+.content-card:nth-last-child(1){
+  background-color: var(--color1);
+  border-radius: 10%;
+  box-shadow: 0 0 6px 0 rga(0,0,0,.5);
+  height:350px;
+  margin: auto;
+ 
+ 
+}
+.content-card__div{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+}
+.content-card__p{
+  color: var(--fondo);
+  line-height: 2;
+  font-size: 18px;
+  padding: 20px;
+  text-align: justify;
+  width: 100%;
+}
+.content-card__p-img{
+display: inline-block;
+width: 20px!important;
+height: 20px!important;
+font-size: 10px;
+margin: 5px 5px;
+}
+
+.people{
+  height: 100%;
+}
+
+.content-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
 /* -----------------------------*/
+
 .questions {
   height: 600px;
   display: flex;
@@ -386,6 +431,7 @@ header .textos-header{
 
 .about-us {
   background: #f2f2f2;
+  
 }
 
 .contenedor-articulo {
@@ -445,39 +491,109 @@ header .textos-header{
 }
 
 
-/* Footer */
+/* footer */
 
 footer{
-  background:url(img/teclado.jpg);
-  background: #C6FFDD;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 300px;
 }
 
-.marca-logo{
-  width: 40%;
-  margin: auto;
-  margin-bottom: var(--);
-}
-.marca-logo img{
-  width: 100%;
-}
-.iconos{
-  display: flex;
-  margin: auto;
-  justify-content: space-around;
-  width: 100%;
-}
-.fab{
-  font-size:60px;
-  color: #FFF;
-  margin-bottom: var(--);
-  display: inline-block;
+.wrapper__ul{
+  list-style: none;
 }
 
-footer p{
-  margin-top:var(--);
+.wrapper__ul-li{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background: #e59500;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
+.wrapper__ul-li-fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.facebook{
+  background: #3b5998;
+}
+
+
+
+.instagram{
+  background: #bc2a8d;
+}
+
+.linkedin{
+  background: #dd4b39;
+}
+
+.whatsapp{
+  background: #4dc247;
+}
+
+.wrapper__ul-li-div{
+  background: #627aac;
+}
+
+.wrapper__ul-li-div{
+  background: #7fd5f6;
+}
+
+.wrapper__ul-li-div{
+  background: #dd94c6;
+}
+
+.wrapper__ul-li-div{
+  background: #eea59c;
+}
+
+.wrapper__ul-li-div{
+  background: #82d47e;
+}
+
+.wrapper__ul-li-div{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 51px;
+  width: 0px;
+  height: 50px;
+  background: #eebb5c;
+  border-radius: 3px;
+  transition: all 0.5s 0.3s ease;
+}
+
+.wrapper__ul-li-div-p{
+  
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.wrapper__ul-li:hover .wrapper__ul-li-div{
+  width: 180px;
+  transition: all 0.5s ease;
+}
+
+.wrapper__ul-li:hover .wrapper__ul-li-div-p{
+  opacity: 1;
+  transition: all 1s 0.2s ease;
+}
+
+
 
 @media screen and (max-width: 700px){
   .nav2{
