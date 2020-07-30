@@ -39,8 +39,7 @@
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
             </svg></div>
     </header>
     <main class="fondo">
@@ -169,8 +168,8 @@
             <p class="after contenedor__p"></p>
             <div class="card">
                 <div class="content-card">
-                    <div class="people">
-                        <img src="img/imagen_nacho.jpg" alt="">
+                    <div class="content-card__people">
+                        <img class="content-card__people-img" src="img/imagen_nacho.jpg" alt="">
                     </div>
                 </div>
                 <div class="content-card">
@@ -190,40 +189,49 @@
 
 
 
-
-
     <footer>
         <div class="wrapper">
-            <ul class="wrapper__ul">
-                <li class="facebook wrapper__ul-li">
-                    <i class="fab fa-facebook-square  wrapper__ul-li-fa"></i>
-                    <div class="wrapper__ul-li-div">
-                        <p class="wrapper__ul-li-div-p">facebook</p>
-                    </div>
-                </li>
+            <div class="wrapper__div">
+                <ul class="wrapper__ul">
+                    <li>
+                        <h4 class="wrapper__ul-li-h4">Contacto</h4>
+                        <p class="after-footer"></p>
+                    </li>
+                    <li class="facebook wrapper__ul-li">
+                        <i class="fab fa-facebook-square  wrapper__ul-li-fa"></i>
+                        <div class="wrapper__ul-li-div">
+                            <a class= "wrapper__ul-li-div-a" href="https://es-es.facebook.com/" target="e_blank">facebook</a>  
+                        </div>
+                    </li>
 
+
+                    <li class="instagram wrapper__ul-li">
+                        <i class="fab fa-instagram wrapper__ul-li-fa "></i>
+                        <div class="wrapper__ul-li-div">
+                            <a class= "wrapper__ul-li-div-a" href="www.facebook.es" target="e_blank">instagram</a>  
+                        </div>
+                    </li>
+
+                    <li class="linkedin wrapper__ul-li">
+                        <i class="fab fa-linkedin-in wrapper__ul-li-fa"></i>
+                        <div class="wrapper__ul-li-div">
+                            <a class= "wrapper__ul-li-div-a" href="www.facebook.es" target="e_blank">linkedIn</a>  
+                        </div>
+                    </li>
+
+                    <li class="whatsapp wrapper__ul-li">
+                        <i class="fab fa-whatsapp wrapper__ul-li-fa "></i>
+                        <div class="wrapper__ul-li-div">
+                            <a class= "wrapper__ul-li-div-a" href="www.facebook.es" target="e_blank">whatsapp</a>  
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper__div">
+                <p class="wrapper__div-p">Programador y desarrollador web</p>
+                <p class="wrapper__div-p2">© Ignacio Herráez González</p>
                 
-                <li class="instagram wrapper__ul-li">
-                    <i class="fab fa-instagram wrapper__ul-li-fa "></i>
-                    <div class="wrapper__ul-li-div">
-                        <p class="wrapper__ul-li-div-p">instagram</p>
-                    </div>
-                </li>
-
-                <li class="linkedin wrapper__ul-li">
-                    <i class="fab fa-linkedin-in wrapper__ul-li-fa"></i>
-                    <div class="wrapper__ul-li-div">
-                        <p class="wrapper__ul-li-div-p">LinkedIn</p>
-                    </div>
-                </li>
-
-                <li class="whatsapp wrapper__ul-li">
-                    <i class="fab fa-whatsapp wrapper__ul-li-fa "></i>
-                    <div class="wrapper__ul-li-div">
-                        <p class="wrapper__ul-li-div-p">whatsapp</p>
-                    </div>
-                </li>
-            </ul>
+            </div>
         </div>
 
     </footer>
