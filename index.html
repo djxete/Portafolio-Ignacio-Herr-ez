@@ -23,14 +23,26 @@
 <body class="hidden">
 
     <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
-        </nav>
-        <div class="hamburguer">
-            <i class="fas fa-bars"></i>
+        <div class="header__div">
+            <nav class="enlaces-header">
+                <a href="#">Inicio</a>
+                <a href="#trabajos">Trabajos</a>
+                <a href="#conocimientos">Conocimientos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <nav class="enlaces-header2">
+                <a href="#">Inicio</a>
+                <a href="#trabajos">Trabajos</a>
+                <a href="#conocimientos">Conocimientos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="hamburguer">
+                <i class="fas fa-bars"></i>
+                <div class="ingles-español">
+                    <a href="#"><img class="ingles-español__img" src="./img/bandera inglesa.jpg" alt="bandera inglesa"></a>
+                    <a href="#"><img class="ingles-español__img" src="./img/bandera-españa.png" alt="bandera españa"></a>
+                </div>
+            </div>
         </div>
 
         <section class="textos-header">
@@ -39,13 +51,15 @@
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
             </svg></div>
     </header>
+
     <main class="fondo">
 
-        <section class="work contenedor" id="trabajo">
-            <h3>Portafolio</h3>
+        <section class="work contenedor" id="trabajos">
+            <h3>Trabajos</h3>
             <p class="after"></p>
             <div class="botones-work">
                 <ul>
@@ -142,7 +156,7 @@
     </main>
     <!-- ------------------------------------------------------------ -->
 
-    <section class="slider">
+    <section class="slider" id="conocimientos">
         <h3>Conocimientos</h3>
         <p class="after"></p>
         <div class="content-all">
@@ -189,7 +203,7 @@
 
 
 
-    <footer>
+    <footer id="contacto">
         <div class="wrapper">
             <div class="wrapper__div">
                 <ul class="wrapper__ul">
@@ -200,7 +214,8 @@
                     <li class="facebook wrapper__ul-li">
                         <i class="fab fa-facebook-square  wrapper__ul-li-fa"></i>
                         <div class="wrapper__ul-li-div">
-                            <a class= "wrapper__ul-li-div-a" href="https://es-es.facebook.com/" target="e_blank">facebook</a>  
+                            <a class="wrapper__ul-li-div-a" href="https://es-es.facebook.com/"
+                                target="e_blank">facebook</a>
                         </div>
                     </li>
 
@@ -208,21 +223,21 @@
                     <li class="instagram wrapper__ul-li">
                         <i class="fab fa-instagram wrapper__ul-li-fa "></i>
                         <div class="wrapper__ul-li-div">
-                            <a class= "wrapper__ul-li-div-a" href="www.facebook.es" target="e_blank">instagram</a>  
+                            <a class="wrapper__ul-li-div-a" href="www.facebook.es" target="e_blank">instagram</a>
                         </div>
                     </li>
 
                     <li class="linkedin wrapper__ul-li">
                         <i class="fab fa-linkedin-in wrapper__ul-li-fa"></i>
                         <div class="wrapper__ul-li-div">
-                            <a class= "wrapper__ul-li-div-a" href="www.facebook.es" target="e_blank">linkedIn</a>  
+                            <a class="wrapper__ul-li-div-a" href="www.facebook.es" target="e_blank">linkedIn</a>
                         </div>
                     </li>
 
                     <li class="whatsapp wrapper__ul-li">
                         <i class="fab fa-whatsapp wrapper__ul-li-fa "></i>
                         <div class="wrapper__ul-li-div">
-                            <a class= "wrapper__ul-li-div-a" href="www.facebook.es" target="e_blank">whatsapp</a>  
+                            <a class="wrapper__ul-li-div-a" href="www.facebook.es" target="e_blank">whatsapp</a>
                         </div>
                     </li>
                 </ul>
@@ -230,7 +245,7 @@
             <div class="wrapper__div">
                 <p class="wrapper__div-p">Programador y desarrollador web</p>
                 <p class="wrapper__div-p2">© Ignacio Herráez González</p>
-                
+
             </div>
         </div>
 
@@ -240,6 +255,7 @@
     <script src="js/materialize.js"></script>
     <script src="js/main.js"></script>
     <script src="js/filtro.js"></script>
+    
 </body>
 
 </html>
