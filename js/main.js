@@ -1,35 +1,16 @@
-// Menu
+// Menu que sale
 
-let enlacesHeader = document.querySelectorAll(".enlaces-header2")[0];
+let hamburguesa= document.querySelector(".hamburguer i");
+let enlacesHeader = document.querySelectorAll(".enlaces-header2");
+let enlacesHeaderA= document.querySelectorAll(".enlaces-header2 a");
 let header = document.querySelectorAll("header");
 
-let semaforo = true;
+$(hamburguesa).click(function(){
 
-/*document.querySelectorAll(".hamburguer")[0].addEventListener("click", function(){
-    if(semaforo){
-        document.querySelectorAll(".enlaces-header2")[0].style.visibility = "visible";
-        document.querySelectorAll(".hamburguer i")[0].style.color ="white";
-        semaforo= false;
+    $(enlacesHeader).fadeToggle(1000);
+    
+});
 
-    }else{
-        document.querySelectorAll(".hamburguer")[0].style.color ="green";
-        document.querySelectorAll(".enlaces-header2")[0].style.display = "none";
-        semaforo= true;
-    }
-
-   
-})*/
-
-    $(".hamburguer").click(function () {
-
-        $(".enlaces-header2").fadeToggle(3000).css({
-            visibility: "visible"
-        });
-        $(".hamburguer i").css({
-            color: "white"
-        });
-
-    });
 
 
 

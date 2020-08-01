@@ -39,37 +39,42 @@ header {
 
 .enlaces-header{
   display: none;
-  padding: 30px 50px  0;
+  padding: 30px 50px 0;
   text-align: left;
 
 }
 .enlaces-header2{
+  display: none;
+}
+.enlaces-header2-div{
   background-color:var(--color1);
   display: flex;
-  visibility: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
   width: 95%;
   height: 600px;
+  
+  
 }
-.enlaces-header2 a{
-flex-basis: calc(25% - 3rem);
-text-align: center;
-
-}
-
-
-nav > a{
+.enlaces-header a{
   color:#fff;
   font-weight: bold;
   margin-right: 50px;
   text-decoration: none;
-  
+}
+.enlaces-header2-div a {
+color:#fff;
+flex-basis: calc(25% - 3rem);
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+margin-right: 50px;
 }
 
-nav > a:hover{
+
+.enlaces-header2-div a:hover{
   text-decoration: underline;
 }
 
@@ -140,12 +145,12 @@ nav > a:hover{
   transition: color 0.5s ease-in;
 }
 .ingles-español__img{
-  border-radius: 10%;
+  border-radius: 5%;
   display: inline-block;
-  line-height: 30px;
-  height: 30px;
+  line-height: 26px;
+  height: 26px;
   margin-right: 15px;
-  width: 30px;
+  width: 26px;
 }
 
 
@@ -590,6 +595,35 @@ footer{
   transition: all 1s 0.2s ease;
 }
 
+
+
+/* -------------------------------------------------------*/
+/*  WHATSAPP */
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 /* --------------------------------------------------------*/
 
 /* MEDIA QUERYS */
@@ -651,7 +685,7 @@ footer{
     display: block;
   }
   .enlaces-header2{
-    display: none;
+    visibility: hidden;
   }
   
   .header__div{
@@ -659,7 +693,7 @@ footer{
     justify-content: space-between;
     width: 100%;
   }
-  nav{
+  .enlaces-header{
     flex-basis: 100%;
   }
   .hamburguer{
