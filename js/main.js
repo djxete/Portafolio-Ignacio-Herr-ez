@@ -5,7 +5,6 @@ let enlacesHeader = document.querySelectorAll(".enlaces-header2");
 let enlacesHeaderA = document.querySelectorAll(".enlaces-header2 a");
 let header = document.querySelectorAll("header");
 let enlaces = document.getElementsByName("enlace");
-console.log(enlaces)
 
 
 let sacarMenu = $(hamburguesa).click(function () {
@@ -27,9 +26,3 @@ enlaces.forEach(function(e){
 
 
 
-
-// Al dar al enlace inicio que se quite el menu
-
-let inicio = document.getElementById("inicio");
-let enlacesHeader2 = document.getElementById("navegacion2");
-let enlacesHeader2css = document.querySelectorAll("enlaces-header2-div");

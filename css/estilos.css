@@ -300,8 +300,9 @@ margin-right: 50px;
   height: 400px;
   padding: 60px 0;
   position: relative;
-  width: 95%;
-  margin: 0 auto;
+  margin: auto;
+  max-width: 95%;
+  overflow: hidden;
 
 }
 .slider h3{
@@ -317,15 +318,21 @@ margin-right: 50px;
   perspective: 800px;
   position: relative;
   margin-top: 10px;
-  padding: 60px;
+  padding: 0 0 60px;
+
 }
 
 .content-carrousel{
   width: 80%;
   position: absolute;
+  top:50%;
+  bottom: 50%;
+  left:0;
+  right: 0;
   animation: rotar 30s infinite linear;
   transform-style: preserve-3d;
-  margin: 0 auto;
+
+
 }
 
 .content-carrousel:hover{
@@ -512,7 +519,7 @@ margin-right: 50px;
 footer{
   background-color: rgba(198, 255, 221, 0.356);
   display: flex;
-  height: 400px;
+  height: 450px;
 }
 .wrapper{
   display: flex;
@@ -560,7 +567,7 @@ footer{
   height: calc(2em + 1vw);
   position: relative;
   background: #e59500;
-  margin: 10px 0;
+  margin: 30px 0;
   cursor: pointer;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -658,7 +665,7 @@ footer{
 }
 
 .wrapper__ul-li:hover .wrapper__ul-li-div{
-  width: calc(4.2em + 1vw);
+  width: calc(4.8em + 1vw);
   transition: all 0.5s ease;
   opacity: 1;
 }
@@ -677,8 +684,8 @@ footer{
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
-	right:40px;
+	bottom:60px;
+	right:15px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
