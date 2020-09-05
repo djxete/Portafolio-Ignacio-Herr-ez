@@ -475,9 +475,10 @@ margin-right: 50px;
 
 .fotoFront__p{
   flex-basis:25%;
+  font-family: 'Merriweather', serif;
   font-size: 1rem;
   font-weight: 200;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 /* imagen nacho*(div cara back)*/
@@ -491,7 +492,7 @@ margin-right: 50px;
 
 .foto2Front__p{
   font-size: 1rem;
-  line-height: 2.5;
+  line-height: 2;
   padding:1rem 1rem 0;
   text-transform: initial;
   text-align: justify;
@@ -502,7 +503,7 @@ margin-right: 50px;
   width: 20px!important;
   height: 20px!important;
   font-size: 20px;
-  margin: 10px 5px;
+  margin: 5px 5px;
   list-style: none;
   }
 
@@ -654,7 +655,7 @@ footer{
   height: 100%;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: calc(0.4em + 1vw);
+  font-size: calc(0.5em + 1vw);
   font-weight: 900;
   color: #fff;
   margin: auto;
@@ -665,7 +666,7 @@ footer{
 }
 
 .wrapper__ul-li:hover .wrapper__ul-li-div{
-  width: calc(4.8em + 1vw);
+  width: calc(5.2em + 1vw);
   transition: all 0.5s ease;
   opacity: 1;
 }
@@ -753,7 +754,7 @@ footer{
 
 }
 
-
+/*@media (min-width:1024px)*/
 
 @media (min-width:1024px){
   nav{
@@ -786,14 +787,14 @@ footer{
     
   }
   .wrapper__ul-li-h4{
-    font-size:calc(0.8em + 1vw)
+    font-size:calc(0.8em + 0.5vw)
   }
   .wrapper__ul-li{
-    width:calc(1.8em + 1vw);
-    height:calc(1.8em + 1vw);
+    width:calc(1.8em + 0.8vw);
+    height:calc(2em + 1vw);
   }
   .wrapper__ul-li-fa{
-    font-size: calc(0.8em + 1vw);
+    font-size: calc(0.5em + 0.6vw);
   }
   .wrapper{
     width: 70%;
@@ -807,9 +808,10 @@ footer{
     
   }
   
+  
   .wrapper__ul-li-div-a{
 
-    font-size: calc(0.3em + 1vw);
+    font-size: calc(0.1em + 0.8vw);
   }
   .wrapper__div-p{
   
@@ -822,6 +824,14 @@ footer{
     font-size: calc(0.6em + 1vw);
     
   }
+  .foto2Front__p{
+    padding: 0 1rem;
+  }
+  .foto2Front__div{
+    margin-top: 0;
+    
+  }
+
 
   
   
