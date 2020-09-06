@@ -432,6 +432,8 @@ margin-right: 50px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 5%;
+  height: 400px;
+  width: 300px;
 }
 .foto, .foto2{
   
@@ -446,7 +448,8 @@ margin-right: 50px;
   background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, hsla(358, 89%, 72%, 0.90), hsla(42, 94%, 75%, 0.90), hsla(144, 100%, 89%, 0.90)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
-  max-height: calc(9rem + 1vw);
+  height: 33%;
+  /* max-height: calc(9rem + 1vw); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -484,16 +487,20 @@ margin-right: 50px;
 /* imagen nacho*(div cara back)*/
 
 .foto2Front{
-  position: relative;
- min-height:100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height:100%;
   transform: rotateY(180deg);
-  bottom:35%;
+  top:0;
+
 }
 
 .foto2Front__p{
+  flex-basis: 75%;
   font-size: 1rem;
   line-height: 2;
-  padding:1rem 1rem 0;
+  padding:1rem 1rem;
   text-transform: initial;
   text-align: justify;
   
@@ -508,7 +515,8 @@ margin-right: 50px;
   }
 
   .foto2Front__div{
-    margin-top: 1rem;
+    flex-basis: 25%;
+    margin: 1rem 0;
     display: flex;
     justify-content: space-around;
   }
@@ -824,13 +832,13 @@ footer{
     font-size: calc(0.6em + 1vw);
     
   }
-  .foto2Front__p{
+  /* .foto2Front__p{
     padding: 0 1rem;
   }
   .foto2Front__div{
     margin-top: 0;
     
-  }
+  } */
 
 
   
